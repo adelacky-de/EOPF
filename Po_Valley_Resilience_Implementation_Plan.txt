@@ -1,0 +1,37 @@
+Implementation Plan: Po Valley Resilience & Rice Monitoring Framework
+====================================================================
+
+1. Project Context & Objectives
+-------------------------------
+* Background: The project focus shifted from an absolute yield prediction model in Punjab, India (due to sparse ground-truth data) to a foundational relative yield analysis in the Po Valley, Italy.
+* Study Area: Vercelli and Pavia provinces in the Po Valley, Europe's most important rice-producing region (focusing on Oryza sativa).
+* Primary Goal: Establish a robust, scalable, and transferable technical foundation for tracking climate-crop dynamics using multi-sensor satellite imagery. This foundational work will link climate events (temperature, water stress) to crop canopy responses, paving the way for future explainable machine learning yield prediction models.
+
+2. Core Deliverables
+--------------------
+* Harmonized, Analysis-Ready Dataset: A unique, cloud-native data cube containing multi-sensor, multi-year Sentinel data for the Po Valley.
+* Robust Driver Analysis & Feature Representations: Statistically validated links between environmental drivers and crop responses, producing a ranked set of candidate predictors.
+* Scalable & Transferable Workflow: An analytical framework designed to be easily extended to other European rice areas.
+
+3. Methodological Workflow
+--------------------------
+The implementation will follow a defined 4-step workflow:
+* Step 1: Ingest Multi-Sensor Data. Acquire data from Sentinel-1 (Radar), Sentinel-2 (Optical), and Sentinel-3 (Thermal).
+* Step 2: Extract Crop Health & Environmental Metrics. Process the raw satellite signals into actionable indices:
+  - Vegetation (NDVI / EVI): Assessing canopy greenness and density (S2).
+  - Moisture (NDWI / NDMI): Assessing water content in soil and plant leaves (S2).
+  - Structure (VV / VH Backscatter): Assessing physical field structure, flooding, and canopy development (S1).
+  - Stress (LST - Land Surface Temperature): Assessing heat stress experienced by the crop (S3).
+* Step 3: Align & Harmonize Data. Perform precise spatial alignment and data fusion to combine the multi-resolution datasets into a single, cohesive structure.
+* Step 4: Time-Series Analysis. Extract pixel-wise temporal signatures spanning the growing season to conduct anomaly detection and phenological analysis.
+
+4. Technical Architecture
+-------------------------
+The technical backbone of this analysis is the Zarr format, enabling feasibility and scalability:
+* Cloud-Native: Designed for efficient storage and access directly in cloud environments.
+* Fast Time-Series Queries: Utilizing optimized chunking strategies to allow rapid extraction of pixel-wise time series, which is crucial for climate-vegetation studies.
+* Scalable & Efficient: Reduces I/O latency and processing costs compared to traditional file formats (like standard GeoTIFFs), making European-scale expansion viable.
+
+5. Future Vision (Beyond this Implementation)
+---------------------------------------------
+This foundational work transforms a "black box" prediction challenge into a transparent, explainable modeling task. The robust driver analysis and relative yield patterns established here are the essential building blocks for creating a stable, absolute yield prediction model in the future, ultimately contributing to regional food security and climate resilience.
