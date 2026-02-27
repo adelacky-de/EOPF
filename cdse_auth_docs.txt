@@ -1,0 +1,520 @@
+Authentication – Documentation
+Documentation
+APIs
+Sentinel Hub
+API Overview
+Authentication
+Welcome
+Roadmap
+Annual Reports
+User registration and authentication
+Setting up Two-Factor Authentication (2FA)
+Data & Information
+Copernicus Sentinel Missions
+Sentinel-1
+Sentinel-2
+Sentinel-3
+Sentinel-5P
+Sentinel-6
+Copernicus Services
+Copernicus Land Monitoring Service (CLMS)
+Copernicus Emergency Management Service (CEMS)
+Copernicus Atmosphere Monitoring Service (CAMS)
+Copernicus Contributing Missions
+Complementary data
+Soil Moisture and Ocean Salinity (SMOS)
+ENVISAT- Medium Resolution Imaging Spectrometer (MERIS)
+Landsat-5
+Landsat-7
+Landsat-8
+Landsat-9
+Landsat Bi-monthly Mosaics
+Global Embeddings Dataset
+SRTM
+APIs
+Product search and download
+Access Token
+OData
+Catalog subscriptions
+Sentinel-1 SLC Bursts
+OpenSearch
+STAC product catalogue
+S3 Access
+TCP stack configuration
+Traceability API
+openEO
+Getting Started
+Python
+R
+JavaScript
+Glossary
+Data Collections
+openEO Processes
+File Formats
+Authentication
+Client Credentials
+Python documentation
+Datacubes explained
+Job configuration
+Credit usage
+Loading external data
+Large scale processing
+openEO federation
+Federation contract
+Federation API
+Federation collections
+Federation file formats
+Federation processes
+REST API Reference
+FAIR & open science
+Sentinel Hub
+User guides
+Beginners Guide
+Data Mask
+Transparency
+Time Series
+Working with metadata in evalscript
+Data
+Sentinel-1 GRD
+Sentinel-2 L1C
+Sentinel-2 L2A
+Sentinel-3 OLCI L1B
+Sentinel-3 OLCI L2
+Sentinel-3 SLSTR L1B
+Sentinel-3 SYN L2
+Sentinel-5P L2
+Landsat 8-9 L1
+Digital Elevation Model (DEM) Data
+CLMS
+Bio-geophysical Parameters
+Vegetation
+Burnt Area
+Burnt Area 2023 - present (raster 300 m), global, daily – version 3.1
+Burnt Area 2025 - present (raster 300 m), global, daily – version 4
+Burnt Area 2019 - present (raster 300 m), global, monthly - version 3.1
+Burnt Area 2018 - present (raster 300 m), global, monthly - version 4
+Dry/Gross Dry Matter Productivity
+DMP 1999-2020 (raster 1 km), global, 10-daily – version 2
+DMP 2014-present (raster 300 m), global, 10-daily – version 1
+DMP 2014-present (raster 300 m), global, 10-daily – version 2
+GDMP 1999-2020 (raster 1 km), global, 10-daily – version 2
+GDMP 2014-present (raster 300 m), global, 10-daily – version 1
+GDMP 2014-present (raster 300 m), global, 10-daily – version 2
+Vegetation Properties
+FAPAR 1999-2020 (raster 1 km), global, 10-daily – version 2
+FAPAR 2014-present (raster 300 m), global, 10-daily – version 1
+FAPAR 2014-present (raster 300 m), global, 10-daily – version 2
+FCOVER 1999-2020 (raster 1 km), global, 10-daily – version 2
+FCOVER 2014-present (raster 300 m), global, 10-daily – version 1
+Fraction of Green Vegetation Cover 2014-present (raster 300 m), global, 10-daily – version 2
+LAI 1999-2020 (raster 1 km), global, 10-daily – version 2
+LAI 2014-present (raster 300 m), global, 10-daily – version 1
+Leaf Area Index 2014-present (raster 300 m), global, 10-daily – version 2
+Net/Gross Primary Production
+GPP 2023-present (raster 300 m), global, 10-daily – version 1
+GPP 2014-present (raster 300 m), global, 10-daily – version 2
+NPP 2023-present (raster 300 m), global, 10-daily – version 1
+NPP 2014-present (raster 300 m), global, 10-daily – version 2
+Vegetation Phenology and Productivity Parameters
+LSP 2023-2024 (raster 300 m), global, yearly – version 1
+LSP 2014-present (raster 300 m), global, yearly – version 2
+Vegetation Indices
+NDVI (LTS) 1999-2017 (raster 1 km), global, 10-daily – version 2
+NDVI (STS) 2015-2019 (raster 1 km), global, 10-daily – version 3
+NDVI 1998-2020 (raster 1 km), global, 10-daily – version 2
+NDVI 1999-2020 (raster 1 km), global, 10-daily – version 3
+NDVI 2014-2020 (raster 300 m), global, 10-daily – version 1
+NDVI 2020-present (raster 300 m), global, 10-daily – version 2
+Normalised Difference Vegetation Index 2014-present (raster 300 m), global, 10-daily – version 3
+Evapotranspiration
+Evapotranspiration 2025-present (raster 300 m), global, 10-daily – version 1
+Heat Flux 2025-present (raster 300 m), global, daily – version 1
+Water Bodies
+River and Lake Ice Extent
+LIE 2017-2024 (raster 250 m), Baltic, daily – version 1
+LIE 2024-present (raster 250 m), Europe, daily – version 2
+Lake Ice Extent global 500m version 2
+LIE 2021-present (raster 500 m), Northern Hemisphere, daily – version 1
+Lake Water Quality
+LWQ 2019-2024 (raster 100 m), global, 10-daily – version 1
+LWQ 2019-2024 (raster 100 m), global, 10-daily – version 2
+LWQ 2002-2012 (raster 300 m), global, 10-daily – version 1
+LWQ 2024-present (raster 300 m), global, 10-daily – version 2
+LWQ 2002-2012 (raster 300 m), global, 10-daily – version 1
+Water Bodies
+Water Bodies 2020-present (raster 100 m), global, monthly – version 1
+Water Bodies (raster 1km), global, 10-daily – version 2
+Water Bodies 2014-2020 (raster 300 m), global, 10-daily – version 1
+Water Bodies 2020-present (raster 300 m), global, monthly – version 2
+Temperature and Reflectance
+Land Surface Temperature
+LST Daily Cycle 2017-2021 (raster 5 km), global, 10-daily – version 1
+LST Daily Cycle 2021-present (raster 5 km), global, 10-daily – version 2
+LST (TCI) 2017-2021 (raster 5 km), global, 10-daily – version 1
+LST (TCI) 2021-present (raster 5 km), global, 10-daily – version 2
+LST 2010-2021 (raster 5 km), global, hourly – version 1
+LST 2021-present (raster 5 km), global, hourly – version 2
+Lake Surface Water Temperature
+Lake Surface Water Temperature 2016-present (raster 1 km), global, 10-daily, Near Real Time – version 1
+Lake Surface Water Temperature 2002-2012 (raster 1 km), global, 10-daily, Offline – version 1
+Snow
+Snow Cover Extent
+SCE 2017-present (raster 500 m), Europe, daily – version 1
+SCE 2025-present (raster 1km), global, daily – version 1
+SCE 2018-present (raster 1 km), Northern Hemisphere, daily – version 1
+Snow Water Equivalent
+SWE 2006-2024 (raster 5 km), Northern Hemisphere, daily – version 1
+SWE 2024-present (raster 5 km), Northern Hemisphere, daily – version 2
+Soil Moisture
+Surface Soil Moisture
+SSM 2014-present (raster 1 km), Europe, daily – version 1
+Soil Water Index
+SWI 2015-present (raster 1 km), Europe, daily – version 1
+SWI 2015-present (raster 1 km), Europe, daily – version 2
+SWI 2007-present (raster 12.5 km), global, 10-daily – version 3
+SWI 2007-present (raster 12.5 km), global, 10-daily – version 4
+SWI 2007-present (raster 12.5 km), global, daily – version 3
+SWI 2007-present (raster 12.5 km), global, daily – version 4
+Land Cover and Land Use Mapping
+Global Dynamic Land Cover
+Land Cover (raster 100 m), global, yearly – version 3
+Land Cover Map at 10m - Annual V1
+Tree Cover Density at 10m - Annual V1
+Bring Your Own COG / Batch
+Zarr
+Data Fusion
+Evalscript (custom script)
+Functions
+Utilities
+Examples
+API Overview
+Authentication
+Rate limiting
+Processing Unit
+Error Handling
+Process API
+CRS support
+Examples
+Examples for S1GRD
+Examples for S2L1C
+Examples for S2L2A
+Examples for S3OLCI
+Examples for S3SLSTR
+Examples for S3SYNL2
+Examples for S5PL2
+Examples for Landsat 8-9 L1
+Examples for DEM
+Examples for DataFusion
+Examples for BYOC
+Asynchronous Processing API
+Examples for Asynchronous Processing API
+Catalog API
+Examples for Catalog API
+Batch Processing API V2
+Migration
+Examples of Batch V2 Processing Workflow
+Batch Processing API (deprecated)
+CRS
+Examples of Batch Processing Workflow
+Statistical API
+Examples for Statistical API
+Batch Statistical API
+Examples of Batch Statistical Workflow
+Bring Your Own COG API
+BYOC API examples
+Zarr Import API
+Zarr Import API examples
+OGC
+WMS
+WCS
+WFS
+WMTS
+Additional Request Parameters
+Output Formats
+Examples for OGC
+Synchronous OpenEO API
+API Reference
+On-Demand Production API
+Applications
+About the Browser
+Display Wall
+JupyterLab
+openEO Web Editor
+openEO Algorithm Plaza
+Manage your Organisation
+Publish a Service
+Execute a Service
+Manage a Service
+Service Maturity
+Service credit consumption
+Reporting
+About Data Workspace
+Catalogue CSV
+QGIS Plugin
+Copernicus Data Space Ecosystem Dashboard
+Ecosystem
+Definitions
+Services categories
+Services onboarding
+Regulation and policies
+Quotas & Limitations
+Access through Research Network
+Jupyter Notebook Samples
+FAQ
+Support
+Catalog APIs news
+Upcoming changes
+Release notes
+On this page
+How to use tokens
+Registering OAuth client
+Inactive clients
+OAuth2 Endpoints
+Token Request Examples
+cURL
+Postman
+Python
+Javascript
+APIs
+Sentinel Hub
+API Overview
+Authentication
+Authentication
+The Sentinel Hub API uses OAuth2 Authentication and requires that you have an access token. In essence, this is a piece of information you add to your requests so the server knows it's you. These tokens do not last forever for a multitude of reasons, but you can get new ones and when they expire from the Sentinel-Hub OAuth2 server at the token endpoint listed below. But first, if you do not have one already, you need to register an OAuth Client in your
+account settings
+. This is so the server can expect you to make such token requests.
+How to use tokens
+Once you have a token, do use it for authenticating all your requests within its validity period. While tokens do not last forever, they do last a reasonable amount of time, and sufficiently long that they can be reused. The information of how long each token lasts is embedded in the token itself in the
+exp
+claim, and can be read from there.
+Do not fetch a new token for each API request you make. Token requests are rate limited, so if you are getting an HTTP 429 error, that means you are requesting too many tokens.
+Tokens are JSON Web Tokens (JWT), more information about them
+here
+or
+here
+.
+Registering OAuth client
+To register an OAuth client, open the “User Settings” tab in the Dashboard app and locate the “OAuth clients” section. Click on the
+Create
+button (1). Provide a name for your OAuth client (2). You can select the Expiry date for your client (3) or select “Never expire” if you want your OAuth client to be indefinite (4). For OAuth clients without expiration you will need to confirm your understanding of risks (5). If your OAuth client will be used by a single-page application (SPA), select the corresponding option (6). If the SPA option is selected, you'll be prompted to choose between "Allow all domains" (7) or specify the web origins (8) from which the OAuth Client will be used. Confirmation is required if you selected to use the OAuth client in a frontend application, acknowledging the risks of exposure (9).
+Once all mandatory fields are filled, proceed by clicking the
+Create
+button (10).
+Your client ID and client secret will be displayed. You may now copy both client ID and the client secret (11). Ensure to copy the secret value and paste it securely as it won’t be retrievable once the pop-up closes! After copying, click
+Close
+(12). With the client ID and client secret in hand, you are now prepared to request tokens.
+Upon completion, you’ll find your newly created OAuth client with its corresponding ID and name (13) listed under the “OAuth clients” section.
+Inactive clients
+Once an OAuth client has expired, it is moved to a list of inactive clients. Similarly, deleted clients will also appear in this list as inactive clients.
+OAuth2 Endpoints
+Token Endpoint - for requesting tokens
+https://identity.dataspace.copernicus.eu/auth/realms/CDSE/protocol/openid-connect/token
+Token Request Examples
+cURL
+The following cURL request will return an access token, just make sure to replace
+<your client id>
+with your client ID and
+<your client secret>
+with your client secret:
+curl
+--request
+POST
+--url
+https://identity.dataspace.copernicus.eu/auth/realms/CDSE/protocol/openid-connect/token
+--header
+'content-type: application/x-www-form-urlencoded'
+--data
+'grant_type=client_credentials&client_id=<your client id>'
+--data-urlencode
+'client_secret=<your client secret>'
+Postman
+In the Postman request
+Authorization
+tab set the
+Type
+to
+OAuth 2.0
+and
+Add auth data to
+to
+Request Headers
+. Set the
+Grant Type
+to
+Client Credentials
+, the access token URL to the token endpoint, then set the
+Client ID
+and
+Client Secret
+to the values of your OAuth Client.
+Scope
+can be blank. Set
+Client Authentication
+to
+Send client credentials in body
+. Click
+Get New Access Token
+button. You should get a new one immediately. To use this token to authorize your request, click
+Use Token
+. For more information see the Postman
+authorization documentation
+Python
+In python the
+requests-oauthlib
+library can handle the retrieval of access tokens using your OAuth Client configuration.
+from
+oauthlib.oauth2
+import
+BackendApplicationClient
+from
+requests_oauthlib
+import
+OAuth2Session
+# Your client credentials
+client_id
+=
+'<client_id>'
+client_secret
+=
+'<secret>'
+# Create a session
+client
+=
+BackendApplicationClient(client_id
+=
+client_id)
+oauth
+=
+OAuth2Session(client
+=
+client)
+# Get token for the session
+token
+=
+oauth.fetch_token(token_url
+=
+'https://identity.dataspace.copernicus.eu/auth/realms/CDSE/protocol/openid-connect/token'
+,
+client_secret
+=
+client_secret, include_client_id
+=
+True
+)
+# All requests using this session will have an access token automatically added
+resp
+=
+oauth.get(
+"https://sh.dataspace.copernicus.eu/configuration/v1/wms/instances"
+)
+print
+(resp.content)
+requests-oauthlib
+doesn't check for status before checking if the response is ok. In case there's a server error, the user can receive an incorrect error, which falsely makes it seem as if the issue is on client side. Library's compliance hooks will prevent the invalid status response from being ignored, returning the correct error. To use them, add the following code:
+def
+sentinelhub_compliance_hook(response):
+response.raise_for_status()
+return
+response
+oauth.register_compliance_hook(
+"access_token_response"
+, sentinelhub_compliance_hook)
+Javascript
+Example using
+axios
+.
+import
+axios
+from
+"axios"
+import
+qs
+from
+"qs"
+const
+client_id
+=
+"<client_id>"
+const
+client_secret
+=
+"<secret>"
+const
+instance
+=
+axios
+.
+create
+({
+baseURL
+:
+"https://sh.dataspace.copernicus.eu"
+})
+const
+config
+=
+{
+headers
+:
+{
+'Content-Type'
+:
+'application/x-www-form-urlencoded;charset=utf-8'
+}
+}
+const
+body
+=
+qs
+.
+stringify
+({
+client_id
+,
+client_secret
+,
+grant_type
+:
+"client_credentials"
+})
+// All requests using this instance will have an access token automatically added
+instance
+.
+post
+(
+"https://identity.dataspace.copernicus.eu/auth/realms/CDSE/protocol/openid-connect/token"
+,
+body
+,
+config)
+.
+then
+(resp
+=>
+{
+Object
+.
+assign
+(instance
+.
+defaults
+,
+{
+headers
+:
+{
+authorization
+:
+`Bearer
+${
+resp
+.
+data
+.
+access_token
+}
+`
+}})
+})
+API Overview
+Rate limiting

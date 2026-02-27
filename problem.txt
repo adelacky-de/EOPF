@@ -1,0 +1,381 @@
+1. ============================================================
+COMPARISON: EOPF vs Earth Search AWS
+============================================================
+
+1. EOPF STAC (https://stac.core.eopf.eodc.eu)
+------------------------------------------------------------
+/Users/ammar/Downloads/EOPF Final Notebooks/.venv/lib/python3.14/site-packages/pystac/item.py:483: DeprecatedWarning: The item 'S2C_MSIL2A_20251104T103231_N0511_R108_T32TMR_20251104T142114' is deprecated.
+  warnings.warn(
+/Users/ammar/Downloads/EOPF Final Notebooks/.venv/lib/python3.14/site-packages/pystac/item.py:483: DeprecatedWarning: The item 'S2C_MSIL2A_20250405T102041_N0511_R065_T32TMR_20250405T175414' is deprecated.
+  warnings.warn(
+/Users/ammar/Downloads/EOPF Final Notebooks/.venv/lib/python3.14/site-packages/pystac/item.py:483: DeprecatedWarning: The item 'S2C_MSIL2A_20250405T102041_N0511_R065_T32TMR_20250405T175414' is deprecated.
+  warnings.warn(
+✓ Total scenes found: 25
+✓ Band naming: B02_10m, B03_10m, B04_10m, B08_10m, SCL_20m
+✓ Location: European servers (EODC)
+✓ Format: Original ESA Sentinel-2 naming
+
+2. Earth Search AWS (https://earth-search.aws.element84.com/v1)
+------------------------------------------------------------
+✓ Total scenes found: 63
+✓ Band naming: red, nir, blue, green, scl (lowercase aliases)
+✓ Location: AWS S3 (global)
+✓ Format: Cloud-optimized COGs with simplified names
+
+============================================================
+RECOMMENDATION:
+============================================================
+🏆 Earth Search AWS has MORE scenes (63 vs 25)
+   → Better for comprehensive time series analysis
+   → Faster global access via AWS
+   → Simpler band naming (red, nir, scl)
+✓ Total scenes found: 63
+✓ Band naming: red, nir, blue, green, scl (lowercase aliases)
+✓ Location: AWS S3 (global)
+✓ Format: Cloud-optimized COGs with simplified names
+
+============================================================
+...
+🏆 Earth Search AWS has MORE scenes (63 vs 25)
+   → Better for comprehensive time series analysis
+   → Faster global access via AWS
+   → Simpler band naming (red, nir, scl)
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings... ==> the duplicated display
+
+2. ============================================================
+COMPARISON: EOPF vs Earth Search AWS
+============================================================
+
+1. EOPF STAC (https://stac.core.eopf.eodc.eu)
+------------------------------------------------------------
+/Users/ammar/Downloads/EOPF Final Notebooks/.venv/lib/python3.14/site-packages/pystac/item.py:483: DeprecatedWarning: The item 'S2A_MSIL2A_20251102T105231_N0511_R051_T31TCE_20251102T144301' is deprecated.
+  warnings.warn(
+/Users/ammar/Downloads/EOPF Final Notebooks/.venv/lib/python3.14/site-packages/pystac/item.py:483: DeprecatedWarning: The item 'S2A_MSIL2A_20251102T105231_N0511_R051_T30TYK_20251102T144301' is deprecated.
+  warnings.warn(
+/Users/ammar/Downloads/EOPF Final Notebooks/.venv/lib/python3.14/site-packages/pystac/item.py:483: DeprecatedWarning: The item 'S2B_MSIL2A_20251102T104109_N0511_R008_T31TCE_20251102T130249' is deprecated.
+  warnings.warn(
+/Users/ammar/Downloads/EOPF Final Notebooks/.venv/lib/python3.14/site-packages/pystac/item.py:483: DeprecatedWarning: The item 'S2B_MSIL2A_20251102T104109_N0511_R008_T31TBE_20251102T130249' is deprecated.
+  warnings.warn(
+/Users/ammar/Downloads/EOPF Final Notebooks/.venv/lib/python3.14/site-packages/pystac/item.py:483: DeprecatedWarning: The item 'S2B_MSIL2A_20251102T104109_N0511_R008_T30TYK_20251102T130249' is deprecated.
+  warnings.warn(
+/Users/ammar/Downloads/EOPF Final Notebooks/.venv/lib/python3.14/site-packages/pystac/item.py:483: DeprecatedWarning: The item 'S2C_MSIL2A_20250630T104041_N0511_R008_T31TCF_20250630T161206' is deprecated.
+  warnings.warn(
+/Users/ammar/Downloads/EOPF Final Notebooks/.venv/lib/python3.14/site-packages/pystac/item.py:483: DeprecatedWarning: The item 'S2C_MSIL2A_20250630T104041_N0511_R008_T31TCE_20250630T161206' is deprecated.
+  warnings.warn(
+/Users/ammar/Downloads/EOPF Final Notebooks/.venv/lib/python3.14/site-packages/pystac/item.py:483: DeprecatedWarning: The item 'S2C_MSIL2A_20250630T104041_N0511_R008_T31TBE_20250630T161206' is deprecated.
+  warnings.warn(
+/Users/ammar/Downloads/EOPF Final Notebooks/.venv/lib/python3.14/site-packages/pystac/item.py:483: DeprecatedWarning: The item 'S2C_MSIL2A_20250630T104041_N0511_R008_T30TYK_20250630T161206' is deprecated.
+  warnings.warn(
+/Users/ammar/Downloads/EOPF Final Notebooks/.venv/lib/python3.14/site-packages/pystac/item.py:483: DeprecatedWarning: The item 'S2C_MSIL2A_20250630T104041_N0511_R008_T31TCF_20250630T161206' is deprecated.
+  warnings.warn(
+/Users/ammar/Downloads/EOPF Final Notebooks/.venv/lib/python3.14/site-packages/pystac/item.py:483: DeprecatedWarning: The item 'S2C_MSIL2A_20250630T104041_N0511_R008_T31TCE_20250630T161206' is deprecated.
+  warnings.warn(
+/Users/ammar/Downloads/EOPF Final Notebooks/.venv/lib/python3.14/site-packages/pystac/item.py:483: DeprecatedWarning: The item 'S2C_MSIL2A_20250630T104041_N0511_R008_T31TBE_20250630T161206' is deprecated.
+  warnings.warn(
+/Users/ammar/Downloads/EOPF Final Notebooks/.venv/lib/python3.14/site-packages/pystac/item.py:483: DeprecatedWarning: The item 'S2C_MSIL2A_20250630T104041_N0511_R008_T30TYK_20250630T161206' is deprecated.
+  warnings.warn(
+✓ Total scenes found: 234
+✓ Band naming: B02_10m, B03_10m, B04_10m, B08_10m, SCL_20m
+✓ Location: European servers (EODC)
+✓ Format: Original ESA Sentinel-2 naming
+
+2. Earth Search AWS (https://earth-search.aws.element84.com/v1)
+------------------------------------------------------------
+✓ Total scenes found: 479
+✓ Band naming: red, nir, blue, green, scl (lowercase aliases)
+✓ Location: AWS S3 (global)
+✓ Format: Cloud-optimized COGs with simplified names
+
+============================================================
+RECOMMENDATION:
+============================================================
+🏆 Earth Search AWS has MORE scenes (479 vs 234)
+   → Better for comprehensive time series analysis
+   → Faster global access via AWS
+   → Simpler band naming (red, nir, scl)
+✓ Total scenes found: 479
+✓ Band naming: red, nir, blue, green, scl (lowercase aliases)
+✓ Location: AWS S3 (global)
+✓ Format: Cloud-optimized COGs with simplified names
+
+============================================================
+...
+🏆 Earth Search AWS has MORE scenes (479 vs 234)
+   → Better for comprehensive time series analysis
+   → Faster global access via AWS
+   → Simpler band naming (red, nir, scl)
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...==> duplictaed display
+
+
+3. 
+--- Searching Sentinel-2 (L2A) ---
+Total items found: 63
+Items per month:
+date
+2025-04    11
+2025-05     6
+2025-06     9
+2025-07     8
+2025-08    10
+2025-09     6
+2025-10     7
+2025-11     6
+Freq: M, dtype: int64
+Total items found: 63
+Items per month:
+date
+2025-04    11
+2025-05     6
+2025-06     9
+2025-07     8
+2025-08    10
+2025-09     6
+2025-10     7
+2025-11     6
+Freq: M, dtype: int64
+/var/folders/96/_ctd49sd1vxdnrzx9x152q440000gn/T/ipykernel_15090/2723465050.py:41: UserWarning: Converting to PeriodArray/Index representation will drop timezone information.
+  monthly_counts = df.groupby(df['date'].dt.to_period('M')).size()==> update --- Searching Sentinel-2 (L2A) from [Source name] ---
+
+4. 
+--- Searching Sentinel-2 (L2A) ---
+Total items found: 479
+Items per month:
+date
+2025-04    53
+2025-05    79
+2025-06    55
+2025-07    66
+2025-08    82
+2025-09    55
+2025-10    41
+2025-11    48
+Freq: M, dtype: int64
+Total items found: 479
+Items per month:
+date
+2025-04    53
+2025-05    79
+2025-06    55
+2025-07    66
+2025-08    82
+2025-09    55
+2025-10    41
+2025-11    48
+Freq: M, dtype: int64
+/var/folders/96/_ctd49sd1vxdnrzx9x152q440000gn/T/ipykernel_15090/1988768341.py:30: UserWarning: Converting to PeriodArray/Index representation will drop timezone information.
+  monthly_counts = df.groupby(df['date'].dt.to_period('M')).size() => update --- Searching Sentinel-2 (L2A) from [Source name] ---
+
+5. Checking available bands/assets in the first item...
+
+Available assets:
+  - aot
+  - blue
+  - cloud
+  - coastal
+  - granule_metadata
+  - green
+  - nir
+  - nir08
+  - nir09
+  - product_metadata
+  - red
+  - rededge1
+  - rededge2
+  - rededge3
+  - scl
+  - snow
+  - swir16
+  - swir22
+  - tileinfo_metadata
+  - visual
+  - wvp
+  - thumbnail
+...
+  - swir16-jp2
+  - swir22-jp2
+  - visual-jp2
+  - wvp-jp2
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings... ==> what is first itme?
+
+
+6. Searching STAC catalog...
+Found 63 scenes.
+Configuring lazy load...
+Computing and saving to rice_ndvi_cube_region_a.zarr...
+Found 63 scenes.
+Configuring lazy load...
+Computing and saving to rice_ndvi_cube_region_a.zarr...
+Zarr write complete.
+Zarr write complete. ==> dupliicated display
+
+
+7. Searching STAC catalog...
+Found 6 scenes.
+Configuring lazy load...
+Computing and saving to rice_ndvi_cube_region_b.zarr...
+Zarr write complete. ==> 6 is obviously not enough, do you search for all the data sources?
+
+
+8. Searching STAC catalog...
+Found 67 scenes.
+Configuring lazy load...
+Computing and saving to rice_ndvi_cube_region_c.zarr...
+Zarr write complete. ==> a continuous line found, why is that and do we need to do the interporlation. if we have do the interpolation, we need to me mention it.
+
+9. # Load both regions' NDVI data from Zarr
+import pandas as pd
+
+# Region A data
+ds_region_a = xr.open_zarr("rice_ndvi_cube_region_a.zarr")
+ts_a = ds_region_a.NDVI.mean(dim=["x", "y"], skipna=True)
+data_region_a = pd.DataFrame({
+    'date': ts_a.time.values,
+    'ndvi_mean': ts_a.values
+})
+
+# Region B data
+ds_region_b = xr.open_zarr("rice_ndvi_cube_region_c.zarr")
+ts_b = ds_region_b.NDVI.mean(dim=["x", "y"], skipna=True)
+data_region_b = pd.DataFrame({
+    'date': ts_b.time.values,
+    'ndvi_mean': ts_b.values
+})
+
+fig, ax = plt.subplots(figsize=(12, 6))
+
+# Plot Region A
+ax.plot(data_region_a['date'], data_region_a['ndvi_mean'], 
+        marker='o', linewidth=2.5, markersize=8, 
+        label='Region A (Favorable)', color='#2ecc71')
+
+# Plot Region B
+ax.plot(data_region_b['date'], data_region_b['ndvi_mean'], 
+        marker='s', linewidth=2.5, markersize=8, 
+        label='Region C (Stress)', color='#e74c3c')
+
+# Add reference line for critical NDVI threshold
+ax.axhline(y=0.6, color='gray', linestyle='--', linewidth=1.5, alpha=0.6, 
+           label='Optimal NDVI threshold')
+
+ax.set_xlabel('Month (2025)', fontsize=12, fontweight='bold')
+ax.set_ylabel('NDVI (Normalized Difference Vegetation Index)', fontsize=12, fontweight='bold')
+ax.set_title('Crop Vegetation Dynamics: Region A vs Region C', fontsize=14, fontweight='bold', pad=15)
+ax.legend(loc='upper left', fontsize=11, framealpha=0.9)
+ax.grid(True, alpha=0.3)
+ax.set_ylim(0.3, 0.85)
+
+plt.tight_layout()
+plt.show()
+
+print("\nKey Statistics:")
+print(f"  Region A - Peak NDVI: {data_region_a['ndvi_mean'].max():.3f}")
+print(f"  Region C - Peak NDVI: {data_region_b['ndvi_mean'].max():.3f}")
+print(f"  NDVI Difference: {(data_region_a['ndvi_mean'].max() - data_region_b['ndvi_mean'].max()):.3f} ({((data_region_a['ndvi_mean'].max() - data_region_b['ndvi_mean'].max()) / data_region_b['ndvi_mean'].max() * 100):.1f}% higher in Region A)")
+ ==> why suddenly region c? and mention what is region A and what is region..... and region A is not completed be plotted
+
+
+
+10. 
+--- Searching Sentinel-1 (GRD) on EOPF STAC ---
+
+[REGION_A-italy] bbox=[8.34, 45.27, 8.4, 45.31]  datetime=2020-04-01/2025-12-01
+Total items found: 42
+Items per month (head):
+date
+2025-04     3
+2025-05     9
+2025-06     1
+2025-07     2
+2025-10    12
+2025-11    14
+2025-12     1
+Freq: M, dtype: int64
+
+[REGION_B-spain] bbox=[0.55, 40.58, 0.9, 40.83]  datetime=2020-04-01/2025-12-01
+Total items found: 52
+Items per month (head):
+date
+2025-04     6
+2025-05    11
+2025-06     1
+2025-10    17
+2025-11    17
+Freq: M, dtype: int64
+...
+2025-07-01               2               0
+2025-10-01              12              17
+2025-11-01              14              17
+2025-12-01               1               0
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings... ==> instead of datetime, use MMYY only
+
+11. --- Searching Sentinel-3 (GRD) on EOPF STAC ---
+
+[REGION_A-italy] bbox=[8.34, 45.27, 8.4, 45.31]  datetime=2020-04-01/2025-12-01
+Total items found: 311
+Items per month (head):
+date
+2025-04      4
+2025-05     10
+2025-06     13
+2025-09      9
+2025-10     96
+2025-11    173
+2025-12      6
+Freq: M, dtype: int64
+
+[REGION_B-spain] bbox=[0.55, 40.58, 0.9, 40.83]  datetime=2020-04-01/2025-12-01
+Total items found: 327
+Items per month (head):
+date
+2025-04      2
+2025-05     11
+2025-06     18
+2025-09     11
+2025-10    104
+2025-11    173
+...
+2025-09-01               9              11
+2025-10-01              96             104
+2025-11-01             173             173
+2025-12-01               6               8
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings... ==> the S2A_MSIL2A_20251102T105231_N0511_R051_T31TCE_20251102T144301
+
+12. import xarray as xr
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+from pystac_client import Client
+
+# Use the regions from earlier
+REGION_A_BBOX = [8.34, 45.27, 8.40, 45.31]  # Vercelli, Italy
+REGION_C_BBOX = [9.022, 45.161, 9.055, 45.182]  # Pavia, Italy
+
+# Date range for Sentinel-1 data
+S1_DATE_RANGE = "2024-04-01/2025-12-01"
+
+STAC_URL = "https://stac.core.eopf.eodc.eu"
+COLLECTION_ID = "sentinel-1-l1-grd"
+
+print("Fetching Sentinel-1 GRD data for Region A and Region C...")
+print("=" * 60) ==> why region C again?
+
+13. 
+Processing Region A (Vercelli, Italy)...
+
+[Region A]
+  Found 42 Sentinel-1 scenes
+  Available assets: ['vh', 'vv', 'product', 'noise-vh', 'noise-vv', 'calibration-vh', 'calibration-vv', 'zipped_product', 'product_metadata']
+  Attempting to load VV band using odc.stac...
+  Error loading with odc.stac: No such band/alias: vv
+
+Processing Region C (Pavia, Italy)...
+
+[Region C]
+  Found 60 Sentinel-1 scenes
+  Available assets: ['vh', 'vv', 'product', 'noise-vh', 'noise-vv', 'calibration-vh', 'calibration-vv', 'zipped_product', 'product_metadata']
+  Attempting to load VV band using odc.stac...
+  Error loading with odc.stac: No such band/alias: vv
+  ==> why its failed
+
+
+  14. 
