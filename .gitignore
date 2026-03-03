@@ -5,3 +5,6 @@ Ammar/
 # Ignore Zarr Verification files
 Zarr_Verification.ipynb
 zarr_verification_summary.csv
+
+# Ignore individual contributions draft
+individual_contributions.txt
