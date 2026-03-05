@@ -8,3 +8,10 @@ zarr_verification_summary.csv
 
 # Ignore individual contributions draft
 individual_contributions.txt
+
+# Ignored based on user request
+cdse_auth_docs.txt
+Po_Valley_Resilience_Implementation_Plan.txt
+Po_Valley_Resilience_Sentinel_Data_Foundation.pdf
+problem.txt
+QnA.txt
